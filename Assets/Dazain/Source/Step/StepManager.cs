@@ -92,7 +92,7 @@ namespace DZ.Step
                 byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(jsonPayload);
                 www.uploadHandler = new UploadHandlerRaw(bodyRaw);
                 www.downloadHandler = new DownloadHandlerBuffer();
-                www.SetRequestHeader("Content-Type", "application/json");
+                www.SetRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
                 yield return www.SendWebRequest();
 

@@ -6681,13 +6681,13 @@ MonoBehaviour:
   _bgImage: {fileID: 1679700867}
   _bgColor: {fileID: 1781422850}
   _resultsImgDesktop:
-  - {fileID: -1540426309290004842, guid: ed152f14b4d53c245b10c37e3b3fbf48, type: 3}
   - {fileID: 8389134475083476877, guid: 2cb359e8e4865b74dac359bb9990dbd4, type: 3}
+  - {fileID: -1540426309290004842, guid: ed152f14b4d53c245b10c37e3b3fbf48, type: 3}
   - {fileID: -6270953770400647376, guid: 114fd6c1678da5448a4fcaa847841025, type: 3}
   - {fileID: 4349915267927364619, guid: e8d934dd0389f3641bb840100f6d955a, type: 3}
   _resultsImgMobile:
-  - {fileID: 75111626227767758, guid: d790302e5f831b5469d40e3e4bb46365, type: 3}
   - {fileID: 1902317673384092583, guid: 6a1fb45cbf4052746972d172e3eb6ccf, type: 3}
+  - {fileID: 75111626227767758, guid: d790302e5f831b5469d40e3e4bb46365, type: 3}
   - {fileID: -4200674580226939738, guid: f64dc6f9a2eb47a4cba6897dbc2a3dc8, type: 3}
   - {fileID: 5960680481146434440, guid: c0f8df68dd215e74c81681ce944c9978, type: 3}
   resultTextDesktop:

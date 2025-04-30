@@ -43,8 +43,10 @@ namespace DZ.Step
             int currentIndex = Array.IndexOf(_steps, _currentStep);
             int nextIndex = (currentIndex + 1) % _steps.Length; // Loop back to the first step if at the end
 
+            Debug.Log("Current step: " + _currentStep);
             // Activate the next step
             _currentStep = _steps[nextIndex];
+            Debug.Log("Next step: " + _currentStep);
             _currentStep.SetActive(true);
         }
     }

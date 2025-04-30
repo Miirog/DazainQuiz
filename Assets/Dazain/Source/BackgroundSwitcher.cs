@@ -11,8 +11,10 @@ public class BackgroundSwitcherResponsive : MonoBehaviour
     [SerializeField] private Sprite _endgameMobileBackground;
     [SerializeField] private Image _bgImage;
 
-    [SerializeField] private GameObject _desktopAnswerButtons;
-    [SerializeField] private GameObject _mobileAnswerButtons;
+    [SerializeField] private Button _startButton;
+
+    [SerializeField] private GameObject[] _desktopObjects;
+    [SerializeField] private GameObject[] _mobileObjects;
 
     void Start()
     {
@@ -50,8 +52,8 @@ public class BackgroundSwitcherResponsive : MonoBehaviour
             {
                 backgroundRenderer.sprite = horizontalBackground;
                 _bgImage.sprite = _endgameDesktopBackground;
-                _mobileAnswerButtons.SetActive(false);
-                _desktopAnswerButtons.SetActive(true);
+                SetActive(_mobileObjects, false);
+                SetActive(_desktopObjects, true);
             }
             else
             {
@@ -65,8 +67,8 @@ public class BackgroundSwitcherResponsive : MonoBehaviour
             {
                 backgroundRenderer.sprite = verticalBackground;
                 _bgImage.sprite = _endgameMobileBackground;
-                _mobileAnswerButtons.SetActive(true);
-                _desktopAnswerButtons.SetActive(false);
+                SetActive(_desktopObjects, false);
+                SetActive(_mobileObjects, true);
             }
             else
             {
@@ -79,6 +81,14 @@ public class BackgroundSwitcherResponsive : MonoBehaviour
             // You can decide what to do in this case, e.g., use a default background
             Debug.Log("Screen aspect ratio is approximately 1:1.");
             // if (defaultBackground != null) { backgroundRenderer.sprite = defaultBackground; }
+        }
+    }
+
+    private void SetActive(GameObject[] buttons, bool isActive)
+    {
+        foreach (var button in buttons)
+        {
+            button.SetActive(isActive);
         }
     }
 }

@@ -19,7 +19,8 @@ namespace DZ.Quiz
         }
 
         [SerializeField] private List<Question> _questions;
-        [SerializeField] private TextMeshProUGUI questionText;
+        [SerializeField] private TextMeshProUGUI questionTextDesktop;
+        [SerializeField] private TextMeshProUGUI questionTextMobile;
 
         [SerializeField] private Button[] desktopAnswerButtons;
         [SerializeField] private Button[] mobileAnswerButtons;
@@ -30,7 +31,15 @@ namespace DZ.Quiz
         [SerializeField] private Image _bgImage;
         [SerializeField] private Image _bgColor;
 
-        [SerializeField] private Sprite[] _resultsImg;
+        [SerializeField] private Sprite[] _resultsImgDesktop;
+        [SerializeField] private Sprite[] _resultsImgMobile;
+
+        [SerializeField] private TextMeshProUGUI[] resultTextDesktop;
+        [SerializeField] private TextMeshProUGUI[] resultTextMobile;
+
+        [SerializeField] private string[] _resultsTextsTitle;
+        [SerializeField] private string[] _resultsTextsDescription;
+        [SerializeField] private string[] _resultsTextsDescription2;
 
         private int currentQuestionIndex = 0;
         private int totalPoints = 0;
@@ -67,7 +76,8 @@ namespace DZ.Quiz
         private void DisplayQuestion()
         {
             Question currentQuestion = _questions[currentQuestionIndex];
-            questionText.text = currentQuestion.questionText;
+            questionTextDesktop.text = currentQuestion.questionText;
+            questionTextMobile.text = currentQuestion.questionText;
 
             // Update desktop and mobile buttons
             UpdateButtons(desktopAnswerButtons, currentQuestion);
@@ -104,22 +114,42 @@ namespace DZ.Quiz
 
             if (totalPoints <= 179)
             {
-                resultImage.sprite = _resultsImg[0];
+                CheckOrientation(0);
             }
             else if (totalPoints >= 180 && totalPoints <= 259)
             {
-                resultImage.sprite = _resultsImg[1];
+                CheckOrientation(1);
             }
             else if (totalPoints >= 260 && totalPoints <= 339)
             {
-                resultImage.sprite = _resultsImg[2];
+                CheckOrientation(2);
             }
             else
             {
-                resultImage.sprite = _resultsImg[3];
+                CheckOrientation(3);
             }
 
             resultImage.gameObject.SetActive(true);
+        }
+
+        private void CheckOrientation(int index)
+        {
+            float aspectRatio = (float)Screen.width / Screen.height;
+
+            if (aspectRatio > 1f)
+            {
+                resultImage.sprite = _resultsImgDesktop[index];
+                resultTextDesktop[0].text = _resultsTextsTitle[index];
+                resultTextDesktop[1].text = _resultsTextsDescription[index];
+                resultTextDesktop[2].text = _resultsTextsDescription2[index];
+            }
+            else if (aspectRatio < 1f)
+            {
+                resultImage.sprite = _resultsImgMobile[index];
+                resultTextMobile[0].text = _resultsTextsTitle[index];
+                resultTextMobile[1].text = _resultsTextsDescription[index];
+                resultTextMobile[2].text = _resultsTextsDescription2[index];
+            }
         }
     }
 }

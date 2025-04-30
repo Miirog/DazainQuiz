@@ -548,6 +548,142 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 64428265}
   m_CullTransparentMesh: 1
+--- !u!1 &72424594
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 72424595}
+  - component: {fileID: 72424597}
+  - component: {fileID: 72424596}
+  m_Layer: 0
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &72424595
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72424594}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2119444233}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -637.2522, y: 483}
+  m_SizeDelta: {x: 293.496, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &72424596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72424594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 1\10
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: a463877438580b8448a41a88f687a03a, type: 2}
+  m_sharedMaterial: {fileID: -6977628128441536788, guid: a463877438580b8448a41a88f687a03a, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 54.4
+  m_fontSizeBase: 54.4
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &72424597
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72424594}
+  m_CullTransparentMesh: 1
 --- !u!1 &88366689
 GameObject:
   m_ObjectHideFlags: 0
@@ -2288,7 +2424,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &480874959
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3688,6 +3824,142 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &638192747
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 638192748}
+  - component: {fileID: 638192750}
+  - component: {fileID: 638192749}
+  m_Layer: 0
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &638192748
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638192747}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 746522257}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 13, y: 594}
+  m_SizeDelta: {x: 328.044, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &638192749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638192747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 1\10
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: a463877438580b8448a41a88f687a03a, type: 2}
+  m_sharedMaterial: {fileID: -6977628128441536788, guid: a463877438580b8448a41a88f687a03a, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 83.27
+  m_fontSizeBase: 83.27
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &638192750
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638192747}
+  m_CullTransparentMesh: 1
 --- !u!1 &657566391
 GameObject:
   m_ObjectHideFlags: 0
@@ -3953,6 +4225,7 @@ MonoBehaviour:
   - {fileID: 2028486998}
   - {fileID: 480874958}
   - {fileID: 407755852}
+  - {fileID: 1382856186}
   _currentStep: {fileID: 0}
   _nextButtons:
   - {fileID: 1587143217}
@@ -4424,6 +4697,7 @@ RectTransform:
   - {fileID: 95128054}
   - {fileID: 1221784343}
   - {fileID: 1379353789}
+  - {fileID: 638192748}
   m_Father: {fileID: 1963013065}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -6350,7 +6624,7 @@ MonoBehaviour:
     - "\"Quem pensa em conceito, entrega presen\xE7a.\""
     - "\u201COrganiza\xE7\xE3o \xE9 amiga da criatividade.\u201D"
     - "\u201CA melhor ativa\xE7\xE3o \xE9 a que deixa mem\xF3ria.\u201D"
-    - "\u201CA vida \xE9 um palco \u2014 bora causar.\u201D"
+    - "\u201CA vida \xE9 um palco, bora causar!\u201D"
     points: 0a000000140000001e00000028000000
     _sprite: {fileID: 293342732420210064, guid: e46e62bb2371f3549948f7a5799e9c06, type: 3}
     _color: {r: 0.8117647, g: 0.38039216, b: 0.3882353, a: 1}
@@ -6425,35 +6699,38 @@ MonoBehaviour:
   - {fileID: 685349676}
   - {fileID: 853892204}
   _resultsTextsTitle:
-  - "<b>Voc\xEA \xE9 o Controlador de Miss\xE3o </b> \\n\\n Voc\xEA garante que tudo
-    funcione do briefing ao p\xF3s-evento. \xC9 quem faz a roda girar  com clareza,
-    organiza\xE7\xE3o e precis\xE3o."
-  - "<b>Voc\xEA \xE9 o Criador de Impacto</b>\\n\\n Voc\xEA quer causar. Seu evento
-    \xE9 onde todo mundo para, grava, compartilha e comenta."
-  - "<b>Voc\xEA \xE9 o Cora\xE7\xE3o da Produ\xE7\xE3o</b>\\n\\n Voc\xEA faz com
-    afeto. Est\xE1 atento \xE0s pessoas, emo\xE7\xF5es e mem\xF3rias criadas."
   - "<b>Voc\xEA \xE9 o Orquestrador Visual</b>\\n\\n Voc\xEA transforma espa\xE7os
     em experi\xEAncias com alma. Seu olhar afiado cria ambientes que encantam pelo
-    equil\xEDbrio entre forma e inten\xE7\xE3o."
+    equil\xEDbrio entre forma e inten\xE7\xE3o. "
+  - "<b>Voc\xEA \xE9 o Controlador de Miss\xE3o </b> \\n\\n Voc\xEA garante que tudo
+    funcione do briefing ao p\xF3s-evento. \xC9 quem faz a roda girar  com clareza,
+    organiza\xE7\xE3o e precis\xE3o. "
+  - "<b>Voc\xEA \xE9 o Criador de Impacto</b>\\n\\n Voc\xEA quer causar. Seu evento
+    \xE9 onde todo mundo para, grava, compartilha e comenta. "
+  - "<b>Voc\xEA \xE9 o Cora\xE7\xE3o da Produ\xE7\xE3o</b>\\n\\n Voc\xEA faz com
+    afeto. Est\xE1 atento \xE0s pessoas, emo\xE7\xF5es e mem\xF3rias criadas. "
   _resultsTextsDescription:
+  - "Seu foco: est\xE9tica, coer\xEAncia, fluidez e identidade visual."
   - "Seu foco: execu\xE7\xE3o impec\xE1vel, planejamento s\xF3lido e entrega eficiente."
   - "Seu foco: impacto visual, inova\xE7\xE3o e viraliza\xE7\xE3o."
   - "Seu foco: v\xEDnculo emocional, prop\xF3sito e bem-estar."
-  - "Seu foco: est\xE9tica, coer\xEAncia, fluidez e identidade visual."
   _resultsTextsDescription2:
-  - " Ativa\xE7\xF5es ideais pra voc\xEA:\\n\\nRealidade aumentada como ferramenta
-    funcional\\n\\n  Sinaliza\xE7\xE3o e ambienta\xE7\xE3o organizacional\\n\\n 
-    Brindes personalizados com fun\xE7\xE3o estrat\xE9gica\\n\\n  Estruturas modulares
-    e log\xEDsticas bem definidas"
-  - "Ativa\xE7\xF5es ideais pra voc\xEA:\\n\\n  Holografia de alto impacto\\n\\n 
-    Realidade mista (digital + f\xEDsico)\\n\\n  FOOh (fake out-of-home) e ativa\xE7\xF5es
-    instagram\xE1veis\\n\\n  Gamifica\xE7\xE3o com storytelling envolvente"
-  - "Ativa\xE7\xF5es ideais pra voc\xEA:\\n\\n  Realidade virtual com narrativa imersiva\\n\\n 
-    Espa\xE7os de conviv\xEAncia com design afetivo\\n\\n  Simuladores sensoriais
-    e experi\xEAncias guiadas\\n\\n  Anima\xE7\xF5es 3D com storytelling emocional"
-  - "Ativa\xE7\xF5es ideais pra voc\xEA:\\n\\n  Proje\xE7\xE3o mapeada com narrativa
-    visual\\n\\n  Totens e interfaces com design autoral\\n\\n  Impress\xE3o 3D para
-    ambienta\xE7\xF5es exclusivas\\n\\n  Cenografia como linguagem da marca"
+  - "Ativa\xE7\xF5es ideais pra voc\xEA:\\n\\nProje\xE7\xE3o mapeada com narrativa
+    visual\\n\\nTotens e interfaces com design autoral\\n\\nImpress\xE3o 3D para
+    ambienta\xE7\xF5es exclusivas\\n\\nCenografia como linguagem da marca"
+  - "Ativa\xE7\xF5es ideais pra voc\xEA:\\n\\nRealidade aumentada como ferramenta
+    funcional\\n\\nSinaliza\xE7\xE3o e ambienta\xE7\xE3o organizacional\\n\\nBrindes
+    personalizados com fun\xE7\xE3o estrat\xE9gica\\n\\nEstruturas modulares e log\xEDsticas
+    bem definidas "
+  - "Ativa\xE7\xF5es ideais pra voc\xEA:\\n\\nHolografia de alto impacto\\n\\nRealidade
+    mista (digital + f\xEDsico)\\n\\nFOOh (fake out-of-home) e ativa\xE7\xF5es instagram\xE1veis\\n\\nGamifica\xE7\xE3o
+    com storytelling envolvente "
+  - "Ativa\xE7\xF5es ideais pra voc\xEA:\\n\\nRealidade virtual com narrativa imersiva\\n\\nEspa\xE7os
+    de conviv\xEAncia com design afetivo\\n\\nSimuladores sensoriais e experi\xEAncias
+    guiadas\\n\\nAnima\xE7\xF5es 3D com storytelling emocional "
+  _totalquestions:
+  - {fileID: 72424596}
+  - {fileID: 638192749}
 --- !u!4 &1220281822
 Transform:
   m_ObjectHideFlags: 0
@@ -10448,7 +10725,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1963013065
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10952,7 +11229,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2119444233
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10971,6 +11248,7 @@ RectTransform:
   - {fileID: 88366690}
   - {fileID: 896144793}
   - {fileID: 595509973}
+  - {fileID: 72424595}
   - {fileID: 1820714428}
   m_Father: {fileID: 480874959}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

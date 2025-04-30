@@ -41,6 +41,8 @@ namespace DZ.Quiz
         [SerializeField] private string[] _resultsTextsDescription;
         [SerializeField] private string[] _resultsTextsDescription2;
 
+        [SerializeField] private TextMeshProUGUI[] _totalquestions;
+
         private int currentQuestionIndex = 0;
         private int totalPoints = 0;
 
@@ -62,16 +64,22 @@ namespace DZ.Quiz
             totalPoints += _questions[currentQuestionIndex].points[answerIndex];
             currentQuestionIndex++;
 
-            // Check if there are more questions
-            if (currentQuestionIndex < _questions.Count)
+            for (int i = 0; i < _totalquestions.Length; i++)
             {
-                DisplayQuestion();
-            }
-            else
-            {
-                ShowResult();
+                _totalquestions[i].text = (currentQuestionIndex + 1).ToString() + "/" + _questions.Count.ToString();
+
+                // Check if there are more questions
+                if (currentQuestionIndex < _questions.Count)
+                {
+                    DisplayQuestion();
+                }
+                else
+                {
+                    ShowResult();
+                }
             }
         }
+
 
         private void DisplayQuestion()
         {
@@ -153,3 +161,4 @@ namespace DZ.Quiz
         }
     }
 }
+

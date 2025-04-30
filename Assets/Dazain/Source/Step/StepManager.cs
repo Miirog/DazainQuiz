@@ -79,7 +79,7 @@ namespace DZ.Step
 
         private IEnumerator SendToGoogleSheets(string inputText)
         {
-            string url = "https://script.google.com/macros/s/AKfycbymqMBGn2X6XOdo2PDtl_xYbcl0edtN6f3iNgBt4G2hk3d__JXHifuZoIf4beVRhNsXuQ/exec"; // Replace with your Web App URL
+            string url = "https://script.google.com/macros/s/AKfycbw5a6UBgH4hXdH1lSEXad9YxWhYN2KV1okW8EE5tFa69Cr4AmB0mHFWAMQxzITuJyb9hA/exec"; // Replace with your Web App URL
 
             // Create JSON payload using the serializable class
             GoogleSheetsPayload payload = new GoogleSheetsPayload { inputText = inputText };

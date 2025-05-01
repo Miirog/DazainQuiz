@@ -7405,6 +7405,11 @@ MonoBehaviour:
   - "Ativa\xE7\xF5es ideais pra voc\xEA:\\n\\nRealidade virtual com narrativa imersiva\\n\\nEspa\xE7os
     de conviv\xEAncia com design afetivo\\n\\nSimuladores sensoriais e experi\xEAncias
     guiadas\\n\\nAnima\xE7\xF5es 3D com storytelling emocional "
+  _simplifiedResultsTextsDescription:
+  - Orquestrador Visual
+  - "Controlador de Miss\xE3o"
+  - Criador de Impacto
+  - "Cora\xE7\xE3o da Produ\xE7\xE3o"
   _totalquestions:
   - {fileID: 72424596}
   - {fileID: 638192749}

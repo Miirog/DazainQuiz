@@ -51,8 +51,6 @@ namespace DZ.Step
 
         private void OnNextButtonClicked()
         {
-            StartCoroutine(SendToGoogleSheets(_inputText));
-
             // Proceed to the next step when the button is clicked
             NextStep();
 
@@ -77,12 +75,12 @@ namespace DZ.Step
             _currentStep.SetActive(true);
         }
 
-        private IEnumerator SendToGoogleSheets(string inputText)
+        public IEnumerator SendToGoogleSheets(string userResults)
         {
-            string url = "https://script.google.com/macros/s/AKfycbw4xFk_BuA3NWxxrkIegz7KGXoStMm5GgVh1sfn9zTCWGNZ2d1lbIRzR4fuu7uwaZS8ew/exec"; // Replace with your Web App URL
+            string url = "https://script.google.com/macros/s/AKfycbyNHJlgvYxDwBRrFw4s2vLdgg1M1txx43qJYN6exos0mQdcS8k0d8n3AfoqAetrzXoriQ/exec"; // Replace with your Web App URL
 
             // Create JSON payload using the serializable class
-            GoogleSheetsPayload payload = new GoogleSheetsPayload { inputText = inputText };
+            GoogleSheetsPayload payload = new() { inputText = _inputText, userResults = userResults };
             string jsonPayload = JsonUtility.ToJson(payload);
 
             Debug.Log("JSON Payload: " + jsonPayload); // Log the JSON payload
@@ -112,6 +110,7 @@ namespace DZ.Step
         public class GoogleSheetsPayload
         {
             public string inputText;
+            public string userResults; // Add other fields as needed
         }
     }
 }

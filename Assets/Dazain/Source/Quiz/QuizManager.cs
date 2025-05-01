@@ -40,6 +40,7 @@ namespace DZ.Quiz
         [SerializeField] private string[] _resultsTextsTitle;
         [SerializeField] private string[] _resultsTextsDescription;
         [SerializeField] private string[] _resultsTextsDescription2;
+        [SerializeField] private string[] _simplifiedResultsTextsDescription;
 
         [SerializeField] private TextMeshProUGUI[] _totalquestions;
 
@@ -143,6 +144,8 @@ namespace DZ.Quiz
         private void CheckOrientation(int index)
         {
             float aspectRatio = (float)Screen.width / Screen.height;
+
+            StartCoroutine(_stepManager.SendToGoogleSheets(_simplifiedResultsTextsDescription[index]));
 
             if (aspectRatio > 1f)
             {
